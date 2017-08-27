@@ -36,13 +36,6 @@ public class ProductController {
 		return "product-all";
 	}
 
-	// @RequestMapping(value = "/createNewProduct")
-	// public String createProductPage(Model model) {
-	// model.addAttribute("product", new Product());
-	// model.addAttribute("categories", categoryService.findAllCategories());
-	// return "product-new";
-	// }
-
 	@RequestMapping(value = "/createNewProduct", method = RequestMethod.GET)
 	public String createProductPage(Model model) {
 		List<Category> allCategories = categoryService.findAllCategories();
