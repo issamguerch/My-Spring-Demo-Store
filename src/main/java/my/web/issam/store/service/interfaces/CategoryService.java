@@ -4,6 +4,10 @@ import java.util.List;
 
 import my.web.issam.store.model.Category;
 
+/**
+ * @author issam
+ *
+ */
 public interface CategoryService {
 	
 	void addCategory(String name, String description);

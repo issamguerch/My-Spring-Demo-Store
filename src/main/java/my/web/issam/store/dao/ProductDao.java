@@ -8,6 +8,10 @@ import org.springframework.data.repository.query.Param;
 
 import my.web.issam.store.model.Product;
 
+/**
+ * @author issam
+ *
+ */
 public interface ProductDao extends JpaRepository<Product, Integer>{
 
 	@Query("select p from Product p where p.name like :name")

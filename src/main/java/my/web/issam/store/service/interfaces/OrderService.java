@@ -8,6 +8,10 @@ import my.web.issam.store.model.Customer;
 import my.web.issam.store.model.Order;
 import my.web.issam.store.model.Product;
 
+/**
+ * @author issam
+ *
+ */
 public interface OrderService {
 	
 	void addOrder(Order order);

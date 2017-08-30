@@ -14,12 +14,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import my.web.issam.store.dto.ProductAllDTO;
+import my.web.issam.store.dto.ProductDTO;
 import my.web.issam.store.model.Category;
 import my.web.issam.store.model.Product;
 import my.web.issam.store.service.interfaces.CategoryService;
 import my.web.issam.store.service.interfaces.ProductService;
 
+/**
+ * @author issam
+ *
+ */
 @Controller
 public class ProductController {
 
@@ -31,7 +35,7 @@ public class ProductController {
 
 	@RequestMapping(value = "/allProducts", method = RequestMethod.GET)
 	public String getProducts(Model model) {
-		List<ProductAllDTO> allProducts = productService.findAllProductsDTO();
+		List<ProductDTO> allProducts = productService.findAllProductsDTO();
 		model.addAttribute("products", allProducts);
 		return "product-all";
 	}

@@ -5,6 +5,10 @@ import java.util.List;
 
 import my.web.issam.store.model.Customer;
 
+/**
+ * @author issam
+ *
+ */
 public interface CustomerService {
 
 	void addCustomer(String login, String password, String firstName, String lastName, String phone, String email, Date dateOfBirth);

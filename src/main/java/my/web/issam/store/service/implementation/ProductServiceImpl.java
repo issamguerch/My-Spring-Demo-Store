@@ -12,12 +12,16 @@ import org.springframework.web.multipart.MultipartFile;
 
 import my.web.issam.store.dao.CategoryDao;
 import my.web.issam.store.dao.ProductDao;
-import my.web.issam.store.dto.ProductAllDTO;
+import my.web.issam.store.dto.ProductDTO;
 import my.web.issam.store.model.Category;
 import my.web.issam.store.model.Product;
 import my.web.issam.store.service.interfaces.CategoryService;
 import my.web.issam.store.service.interfaces.ProductService;
 
+/**
+ * @author issam
+ *
+ */
 @Service
 public class ProductServiceImpl implements ProductService{
 
@@ -96,15 +100,15 @@ public class ProductServiceImpl implements ProductService{
 	}
 
 	@Transactional
-	public List<ProductAllDTO> findAllProductsDTO() {
-		List<ProductAllDTO> productsAll = new ArrayList<ProductAllDTO>();
+	public List<ProductDTO> findAllProductsDTO() {
+		List<ProductDTO> productsAll = new ArrayList<ProductDTO>();
 		List<Product> allProducts = productDao.findAll();
 		for (Product product : allProducts) {
-			ProductAllDTO productAllDTO = new ProductAllDTO(product.getProductId(), product.getName(), product.getDescription(),
+			ProductDTO ProductDTO = new ProductDTO(product.getProductId(), product.getName(), product.getDescription(),
 					product.getCity(), product.getPrice(), product.getCategory().getName());
 			 String image = Base64.getEncoder().encodeToString(product.getImagePath());
-			 productAllDTO.setImagePath(image);
-			productsAll.add(productAllDTO);
+			 ProductDTO.setImagePath(image);
+			productsAll.add(ProductDTO);
 		}
 		return productsAll;
 	}

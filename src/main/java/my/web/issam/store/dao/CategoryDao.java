@@ -6,6 +6,10 @@ import org.springframework.data.repository.query.Param;
 
 import my.web.issam.store.model.Category;
 
+/**
+ * @author issam
+ *
+ */
 public interface CategoryDao extends JpaRepository<Category, Integer>{
 
 	@Query("select c from Category c where c.name like :name")

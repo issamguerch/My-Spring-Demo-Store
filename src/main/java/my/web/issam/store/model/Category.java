@@ -14,6 +14,10 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/**
+ * @author issam
+ *
+ */
 @Entity
 @Table(name = "categories")
 public class Category {

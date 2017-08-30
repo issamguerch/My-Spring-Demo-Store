@@ -16,7 +16,7 @@ C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my
 C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\controller\HomeController.java
 C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\service\implementation\ProductServiceImpl.java
 C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\dao\ProductDao.java
-C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\dto\ProductAllDTO.java
+C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\dto\ProductDTO.java
 C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\dao\CustomerDao.java
 C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\service\interfaces\ProductService.java
 C:\Users\issam\Desktop\projects\WebStore-master\WebStore-master\src\main\java\my\web\issam\store\controller\CustomerController.java

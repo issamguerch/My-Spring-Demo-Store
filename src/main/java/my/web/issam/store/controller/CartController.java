@@ -25,6 +25,10 @@ import my.web.issam.store.service.interfaces.CustomerService;
 import my.web.issam.store.service.interfaces.OrderService;
 import my.web.issam.store.service.interfaces.ProductService;
 
+/**
+ * @author issam
+ *
+ */
 @Controller
 public class CartController {
 
@@ -45,6 +49,11 @@ public class CartController {
 	@Autowired
 	private CustomerDao customerDao;
 	
+	/**
+	 * @param productId
+	 * @param referedFrom
+	 * @return
+	 */
 	@RequestMapping(value = "cart/add/{productId}")
 	public String addToCart(@PathVariable("productId") int productId, @RequestHeader("referer") String referedFrom) {
 		Product product = productService.findProductById(productId);
@@ -53,12 +62,21 @@ public class CartController {
 		return "redirect:" + referedFrom;
 	}
 	
+	/**
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "/cart", method = RequestMethod.GET)
 	public String showCart(Model model){
 		model.addAttribute(cart);
 		return "cart";
 	}
 	
+	/**
+	 * @param httpSession
+	 * @param redirectAttributes
+	 * @return
+	 */
 	@RequestMapping(value = "/cart/confirmOrder", method = RequestMethod.POST)
 	public String confirmOrder(HttpSession httpSession, RedirectAttributes redirectAttributes){
 		if(cart.getContents().isEmpty()){

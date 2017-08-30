@@ -9,6 +9,10 @@ import my.web.issam.store.model.Order;
 
 import org.springframework.data.jpa.repository.Query;
 
+/**
+ * @author issam
+ *
+ */
 public interface OrderDao extends JpaRepository<Order, Integer>{
 
 	@Query("select o from Order o where o.orderDate like :orderDate")

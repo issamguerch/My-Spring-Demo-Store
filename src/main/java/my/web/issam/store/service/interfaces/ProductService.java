@@ -4,10 +4,14 @@ import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import my.web.issam.store.dto.ProductAllDTO;
+import my.web.issam.store.dto.ProductDTO;
 import my.web.issam.store.model.Category;
 import my.web.issam.store.model.Product;
 
+/**
+ * @author issam
+ *
+ */
 public interface ProductService {
 	
 	void addProduct(String name, String description, String city, double price, MultipartFile file, String category);
@@ -24,6 +28,6 @@ public interface ProductService {
 	
 	List<Product> findAllProducts();
 	
-	List<ProductAllDTO> findAllProductsDTO();
+	List<ProductDTO> findAllProductsDTO();
 	
 }

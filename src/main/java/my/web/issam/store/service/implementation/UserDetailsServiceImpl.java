@@ -17,6 +17,10 @@ import org.springframework.transaction.annotation.Transactional;
 import my.web.issam.store.dao.CustomerDao;
 import my.web.issam.store.model.Customer;
 
+/**
+ * @author issam
+ *
+ */
 @Service("userDetailsService")
 public class UserDetailsServiceImpl implements UserDetailsService {
 

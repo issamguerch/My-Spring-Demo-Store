@@ -7,10 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import my.web.issam.store.dto.ProductAllDTO;
+import my.web.issam.store.dto.ProductDTO;
 import my.web.issam.store.model.Product;
 import my.web.issam.store.service.interfaces.ProductService;
 
+/**
+ * @author issam
+ *
+ */
 @Controller
 public class HomeController {
 
@@ -19,7 +23,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/")
 	public String home(Model model){
-		List<ProductAllDTO> allProducts = productService.findAllProductsDTO();
+		List<ProductDTO> allProducts = productService.findAllProductsDTO();
 		model.addAttribute("products", allProducts);
 		return "home";
 	}

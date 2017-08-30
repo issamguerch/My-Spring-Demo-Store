@@ -12,7 +12,10 @@
 <div class="container">
 <h2>Your cart</h2>
 <form action='cart/confirmOrder' method="post">
-${cartMessage}
+<c:if test="${ cartMessage != null}">
+   <div class="alert alert-danger">${cartMessage}</div> 
+</c:if>
+
 <table class="table">
 	<tr>
 		<th> Product </th>
@@ -34,7 +37,7 @@ ${cartMessage}
 		<td>$${cart.totalCost}</td>
 	</tr>
 </table>
-<input type="submit" value="Confirm Order"></input>
+<input class="btn btn-primary" type="submit" value="Confirm Order"></input>
 </form>
 
 </div>

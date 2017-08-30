@@ -16,6 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import my.web.issam.store.model.Category;
 import my.web.issam.store.service.interfaces.CategoryService;
 
+/**
+ * @author issam
+ *
+ */
 @Controller
 public class CategoryController {
 

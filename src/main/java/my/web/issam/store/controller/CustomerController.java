@@ -20,6 +20,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import my.web.issam.store.model.Customer;
 import my.web.issam.store.service.interfaces.CustomerService;
 
+/**
+ * @author issam
+ *
+ */
 @Controller
 public class CustomerController {
 

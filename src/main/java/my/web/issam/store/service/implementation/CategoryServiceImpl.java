@@ -10,6 +10,10 @@ import my.web.issam.store.dao.CategoryDao;
 import my.web.issam.store.model.Category;
 import my.web.issam.store.service.interfaces.CategoryService;
 
+/**
+ * @author issam
+ *
+ */
 @Service
 public class CategoryServiceImpl implements CategoryService{
 

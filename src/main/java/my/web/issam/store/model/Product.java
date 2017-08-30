@@ -16,6 +16,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * @author issam
+ *
+ */
 @Entity
 @Table(name = "products")
 public class Product {

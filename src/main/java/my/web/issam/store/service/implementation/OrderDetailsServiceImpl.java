@@ -11,6 +11,10 @@ import my.web.issam.store.model.OrderDetails;
 import my.web.issam.store.model.Product;
 import my.web.issam.store.service.interfaces.OrderDetailsService;
 
+/**
+ * @author issam
+ *
+ */
 @Service
 public class OrderDetailsServiceImpl implements OrderDetailsService{
 

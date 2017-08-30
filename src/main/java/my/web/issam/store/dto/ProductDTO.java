@@ -1,6 +1,10 @@
 package my.web.issam.store.dto;
 
-public class ProductAllDTO {
+/**
+ * @author issam
+ *
+ */
+public class ProductDTO {
 	private int productId;
 	private String name;
 	private String description;
@@ -9,11 +13,11 @@ public class ProductAllDTO {
 	private String categoryName;
 	private String imagePath;
 	
-	public ProductAllDTO(){
+	public ProductDTO(){
 		
 	}
 
-	public ProductAllDTO(int productId, String name, String description, String city, double price,
+	public ProductDTO(int productId, String name, String description, String city, double price,
 			String categoryName) {
 		this.productId = productId;
 		this.name = name;
