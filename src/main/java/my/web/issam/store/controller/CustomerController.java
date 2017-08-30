@@ -30,8 +30,8 @@ public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
 
-	@RequestMapping(value = "/customer={customerId}", method = RequestMethod.GET)
-	public String getCustomers(@PathVariable String customerId,Model model) {
+	@RequestMapping(value = "/customers", method = RequestMethod.GET)
+	public String getCustomers(Model model) {
 		List<Customer> allCustomers = customerService.findAllCustomers();
 		model.addAttribute("customers", allCustomers);
 		return "customer-all";

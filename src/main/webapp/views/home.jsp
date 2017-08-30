@@ -31,8 +31,8 @@
 	
 		<security:authorize access="hasRole('ROLE_ADMIN')">
 			<div class="adminNaviPanel col-sm-2 col" align="left">
-				<a href="customer={customerId}">Customers</a> <a href="allProducts">Products</a>
-				<a href="category={categoryId}">Categories</a>
+				<a href="customers">Customers</a> <a href="allProducts">Products</a>
+				<a href="categories">Categories</a>
 			</div>
 		</security:authorize>
 	

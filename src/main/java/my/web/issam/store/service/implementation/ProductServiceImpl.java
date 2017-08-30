@@ -105,7 +105,10 @@ public class ProductServiceImpl implements ProductService{
 		List<Product> allProducts = productDao.findAll();
 		for (Product product : allProducts) {
 			ProductDTO ProductDTO = new ProductDTO(product.getProductId(), product.getName(), product.getDescription(),
-					product.getCity(), product.getPrice(), product.getCategory().getName());
+					product.getCity(), 
+					product.getPrice(), 
+					product.getCategory()
+					.getName());
 			 String image = Base64.getEncoder().encodeToString(product.getImagePath());
 			 ProductDTO.setImagePath(image);
 			productsAll.add(ProductDTO);

@@ -26,8 +26,8 @@ public class CategoryController {
 	@Autowired
 	private CategoryService categoryService;
 	
-	@RequestMapping(value = "/category={categoryId}", method = RequestMethod.GET)
-	public String getCategories(@PathVariable String categoryId, Model model){
+	@RequestMapping(value = "/categories", method = RequestMethod.GET)
+	public String getCategories(Model model){
 		List<Category> allCategories = categoryService.findAllCategories();
 		model.addAttribute("categories", allCategories);
 		return "category-all";

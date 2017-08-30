@@ -73,6 +73,6 @@ public class ProductController {
 	@RequestMapping(value = "/deleteProduct={productId}", method = RequestMethod.GET)
 	public String deleteProduct(@PathVariable("productId") int productId){
 		productService.deleteProduct(productId);
-		return "redirect:/";
+		return "redirect:/allProducts";
 	}
 }
