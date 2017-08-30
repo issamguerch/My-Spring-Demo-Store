@@ -13,7 +13,7 @@
 				<div class="form-group">
 					<label for="inputEmail3" class="col-sm-2 control-label"></label>
 					<div class="col-sm-10">
-						<input type="hidden" class="form-control" placeholder="Id"
+						<input  hidden class="form-control" placeholder="Id"
 							name="productId" value="${products.productId}">
 					</div>
 				</div>
@@ -22,28 +22,28 @@
 				<label for="inputLogin3" class="col-sm-2 control-label">Name</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" name="name"
-						placeholder="Name">
+						placeholder="Name" value="${products.name}">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputPassword3" class="col-sm-2 control-label">Description</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" name="description"
-						placeholder="Description">
+						placeholder="Description" value="${products.description}">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputName3" class="col-sm-2 control-label">City</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" name="city"
-						placeholder="City">
+						placeholder="City" value="${products.city}">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputSecondname3" class="col-sm-2 control-label">Price</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" name="price"
-						placeholder="00.0">
+						placeholder="00.0" value="${products.price}">
 				</div>
 			</div>
 			<div class="form-group">

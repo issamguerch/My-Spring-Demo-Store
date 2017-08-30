@@ -4,6 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link href="resources/css/style.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <title>Register</title>
@@ -11,7 +12,7 @@
 <body>	
 	<div class="container">
 	<form class="form-horizontal" action="newCustomer" method="post">
-		<div class="form-group">
+		<div class="form-group ">
     		<label for="inputLogin3" class="col-sm-2 control-label">Login</label>
    			<div class="col-sm-10">
    			<input type="text" class="form-control" name="login" placeholder="Login"> <form:errors path="login" />

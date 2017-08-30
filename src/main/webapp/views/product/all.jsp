@@ -31,8 +31,8 @@
 					<td>${product.price}</td>
 					<td>${product.categoryName}</td>
 					<td>
-						<a href="editProduct=${product.productId}" class="btn btn-success"> <span class="glyphicon glyphicon-pencil"></span></a>
-						<a href="deleteProduct=${product.productId}" class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span></a>
+						<a href="editProduct=${product.productId}" class="btn btn-success"> <span class="fa fa-pencil"></span></a>
+						<a href="deleteProduct=${product.productId}" class="btn btn-danger"> <span class="fa fa-trash-o"></span></a>
 					</td>
 				</tr>
 			</c:forEach>
