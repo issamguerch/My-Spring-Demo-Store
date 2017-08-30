@@ -11,9 +11,11 @@
 <title>Category all</title>
 </head>
 <body>
+<div align="center"><a class="btn btn-primary btn-lg" href="createNewCategory">Create Category </a></div>
+
 <div class="container">
 	<table class="table table-hover">
-		<thead>
+		<thead class="thead-inverse">
 			<tr>
 				<th>Name</th>
 				<th>Description</th>
@@ -27,14 +29,13 @@
 					<td>${category.name}</td>
 					<td>${category.description}</td>
 					<td>
-						<a href="editCategory=${category.categoryId}" class="btn btn-success"> <span class="glyphicon glyphicon-pencil"></span></a>
-						<a href="deleteCategory=${category.categoryId}" class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span></a>
+						<a href="editCategory=${category.categoryId}" class="btn btn-success"> <span class="fa fa-pencil"></span></a>
+						<a href="deleteCategory=${category.categoryId}" class="btn btn-danger"> <span class="fa fa-trash-o"></span></a>
 					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 	</div>
-	<a href="createNewCategory">Create Category </a>
 </body>
 </html>

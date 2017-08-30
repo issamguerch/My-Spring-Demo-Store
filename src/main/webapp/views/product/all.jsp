@@ -7,10 +7,11 @@
 <title>All Products</title>
 </head>
 <body>
+<div align="center"><a class="btn btn-primary btn-lg" href="createNewProduct">Create Product</a></div>
 	
 	<div class="container">
 	<table class="table table-hover">
-		<thead>
+		<thead class="thead-inverse">
 			<tr>
 				<th>Image</th>
 				<th>Name</th>
@@ -39,6 +40,6 @@
 		</tbody>
 	</table>
 	</div>
-	<a href="createNewProduct">Create Product</a>
+	
 </body>
 </html>

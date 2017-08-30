@@ -22,7 +22,7 @@
 				<label for="inputLogin3" class="col-sm-2 control-label">Name</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" name="name"
-						placeholder="Name" value="${products.name}">
+						placeholder="Name" maxlength="15"  value="${products.name}">
 				</div>
 			</div>
 			<div class="form-group">
@@ -42,7 +42,7 @@
 			<div class="form-group">
 				<label for="inputSecondname3" class="col-sm-2 control-label">Price</label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" name="price"
+					<input type="number" class="form-control" name="price"
 						placeholder="00.0" value="${products.price}">
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@  taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@  taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,7 +11,8 @@
 <body>
 
 	<div class="container">
-		<form class="form-horizontal" action="newProduct" method="post" enctype="multipart/form-data">
+		<form class="form-horizontal" action="newProduct" method="post"
+			enctype="multipart/form-data">
 			<div class="form-group">
 				<label for="inputLogin3" class="col-sm-2 control-label">Name</label>
 				<div class="col-sm-10">
@@ -47,9 +48,20 @@
 						placeholder="Image">
 				</div>
 			</div>
-				<c:forEach items="${categories}" var="category">
-					<input type="radio" name= "category" value="${category.categoryId}">${category.name}
-				</c:forEach>
+			<c:forEach items="${categories}" var="category">
+				
+				
+
+			<div class="col-lg-6">
+				<div class="input-group">
+					<span class="input-group-addon"> 
+					<input type="radio" name="category" value="${category.categoryId}" aria-label="Radio button for following text input">
+					</span> 
+					<input type="text" class="form-control" disabled="disabled" value="${category.name}">
+				</div>
+			</div>
+			</c:forEach>
+			<br>
 			<div class="register_button">
 				<button type="submit" class="btn btn-primary">Create</button>
 			</div>
